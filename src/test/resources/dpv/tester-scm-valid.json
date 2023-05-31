@@ -1,0 +1,90 @@
+{
+  "data-subject":{
+    "@context":{
+      "@version":1.1,
+      "@vocab":"https://soya.data-container.net/SCM_UsagePolicy/",
+      "dpvo":"https://w3id.org/dpv/dpv-owl#",
+      "scdv":"https://w3id.org/scdv/v1#",
+      "dpvo:hasPurpose":{
+        "@type":"@id"
+      },
+      "dpvo:hasProcessing":{
+        "@type":"@id"
+      },
+      "dpvo:hasRecipient":{
+        "@type":"@id"
+      },
+      "dpvo:hasLocation":{
+        "@type":"@id"
+      },
+      "dpvo:hasExpiryTime":{
+        "@type":"http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    "@graph":[
+      {
+        "@type":"SCM_UsagePolicy",
+        "dpvo:hasPurpose": [
+          "scdv:GreenClaim",
+          "scdv:DateMarking",
+          "scdv:SupplyChainOptimization"
+        ],
+        "dpvo:hasProcessing": [
+          "scdv:Analyse",
+          "scdv:Query",
+          "scdv:Store"
+        ],
+        "dpvo:hasRecipient": [
+          "scdv:Authority",
+          "scdv:DataSpace"
+        ],
+        "dpvo:hasLocation": [
+          "scdv:EU"
+        ],
+        "dpvo:hasExpiryTime": "1970-06-01T01:00:00"
+      }
+    ]
+  },
+  "data-controller":{
+    "@context":{
+      "@version":1.1,
+      "@vocab":"https://soya.data-container.net/SCM_UsagePolicy/",
+      "dpvo":"https://w3id.org/dpv/dpv-owl#",
+      "scdv":"https://w3id.org/scdv/v1#",
+      "dpvo:hasPurpose":{
+        "@type":"@id"
+      },
+      "dpvo:hasProcessing":{
+        "@type":"@id"
+      },
+      "dpvo:hasRecipient":{
+        "@type":"@id"
+      },
+      "dpvo:hasLocation":{
+        "@type":"@id"
+      },
+      "dpvo:hasExpiryTime":{
+        "@type":"http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    "@graph":[
+      {
+        "@type":"SCM_UsagePolicy",
+        "dpvo:hasPurpose": [
+          "scdv:GreenClaim"
+        ],
+        "dpvo:hasProcessing": [
+          "scdv:Store"
+        ],
+        "dpvo:hasRecipient": [
+          "scdv:Authority",
+          "scdv:DataSpace"
+        ],
+        "dpvo:hasLocation": [
+          "scdv:EU"
+        ],
+        "dpvo:hasExpiryTime": "1970-06-01T01:00:00"
+      }
+    ]
+  }
+}

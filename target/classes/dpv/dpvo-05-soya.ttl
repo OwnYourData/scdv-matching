@@ -1,0 +1,556 @@
+
+@prefix dpv: <https://w3id.org/dpv/dpv-owl#> .
+@prefix dpv-soya: <https://w3id.org/soya/dpv#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+dpv-soya:AND rdfs:subClassOf dpv:Country ; a owl:Class . 
+dpv-soya:ARE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:AFG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ATG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:AIA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ALB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ARM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:AGO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ATA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ARG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ASM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:AUT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:AUS rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ABW rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ALA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:AZE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BIH rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BRB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BGD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BEL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BFA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BGR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BHR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BDI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BEN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BLM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BMU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BRN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BOL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BES rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BRA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BHS rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BTN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BVT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BWA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BLR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:BLZ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CAN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CCK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:COD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CAF rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:COG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CHE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CIV rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:COK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CHL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CMR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CHN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:COL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CRI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CUB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CPV rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CUW rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CXR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CYP rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CZE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:DEU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:DJI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:DNK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:DMA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:DOM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:DZA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ECU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:EST rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:EGY rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ESH rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ERI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ESP rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ETH rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:FIN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:FJI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:FLK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:FSM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:FRO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:FRA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GAB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GBR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GRD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GEO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GUF rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GGY rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GHA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GIB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GRL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GMB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GIN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GLP rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GNQ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GRC rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SGS rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GTM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GUM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GNB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:GUY rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:HKG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:HMD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:HND rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:HRV rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:HTI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:HUN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:IDN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:IRL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ISR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:IMN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:IND rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:IOT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:IRQ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:IRN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ISL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ITA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:JEY rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:JAM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:JOR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:JPN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KEN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KGZ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KHM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KIR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:COM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KNA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PRK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KOR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:XKX rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KWT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:CYM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:KAZ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LAO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LBN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LCA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LIE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LKA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LBR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LSO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LTU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LUX rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LVA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:LBY rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MAR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MCO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MDA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MNE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MAF rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MDG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MHL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MKD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MLI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MMR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MNG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MAC rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MNP rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MTQ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MRT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MSR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MLT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MUS rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MDV rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MWI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MEX rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MYS rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MOZ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NAM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NCL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NER rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NFK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NGA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NIC rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NLD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NOR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NPL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NRU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NIU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:NZL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:OMN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PAN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PER rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PYF rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PNG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PHL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PAK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:POL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SPM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PCN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PRI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PSE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PRT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PLW rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:PRY rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:QAT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:REU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ROU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SRB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:RUS rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:RWA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SAU rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SLB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SYC rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SDN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SSD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SWE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SGP rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SHN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SVN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SJM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SVK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SLE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SMR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SEN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SOM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SUR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:STP rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SLV rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SXM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SYR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SWZ rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TCA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TCD rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ATF rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TGO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:THA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TJK rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TKL rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TLS rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TKM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TUN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TON rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TUR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TTO rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TUV rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TWN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:TZA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:UKR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:UGA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:UMI rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:USA rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:URY rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:UZB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:VAT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:VCT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:VEN rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:VGB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:VIR rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:VNM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:VUT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:WLF rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:WSM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:YEM rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:MYT rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ZAF rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ZMB rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ZWE rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:SCG rdfs:subClassOf dpv:Country ; a owl:Class .
+dpv-soya:ANT rdfs:subClassOf dpv:Country ; a owl:Class .
+
+dpv-soya:AF rdfs:subClassOf dpv:Region ; a owl:Class .
+dpv-soya:AFG rdfs:subClassOf dpv-soya:AF .
+dpv-soya:AGO rdfs:subClassOf dpv-soya:AF .
+dpv-soya:BFA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:BDI rdfs:subClassOf dpv-soya:AF .
+dpv-soya:BEN rdfs:subClassOf dpv-soya:AF .
+dpv-soya:BWA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:COD rdfs:subClassOf dpv-soya:AF .
+dpv-soya:CAF rdfs:subClassOf dpv-soya:AF .
+dpv-soya:COG rdfs:subClassOf dpv-soya:AF .
+dpv-soya:CIV rdfs:subClassOf dpv-soya:AF .
+dpv-soya:CMR rdfs:subClassOf dpv-soya:AF .
+dpv-soya:CPV rdfs:subClassOf dpv-soya:AF .
+dpv-soya:DJI rdfs:subClassOf dpv-soya:AF .
+dpv-soya:DZA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:EGY rdfs:subClassOf dpv-soya:AF .
+dpv-soya:ESH rdfs:subClassOf dpv-soya:AF .
+dpv-soya:ERI rdfs:subClassOf dpv-soya:AF .
+dpv-soya:ETH rdfs:subClassOf dpv-soya:AF .
+dpv-soya:GAB rdfs:subClassOf dpv-soya:AF .
+dpv-soya:GHA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:GMB rdfs:subClassOf dpv-soya:AF .
+dpv-soya:GIN rdfs:subClassOf dpv-soya:AF .
+dpv-soya:GNQ rdfs:subClassOf dpv-soya:AF .
+dpv-soya:GNB rdfs:subClassOf dpv-soya:AF .
+dpv-soya:KEN rdfs:subClassOf dpv-soya:AF .
+dpv-soya:COM rdfs:subClassOf dpv-soya:AF .
+dpv-soya:LBR rdfs:subClassOf dpv-soya:AF .
+dpv-soya:LSO rdfs:subClassOf dpv-soya:AF .
+dpv-soya:LBY rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MAR rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MDG rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MLI rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MRT rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MUS rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MWI rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MOZ rdfs:subClassOf dpv-soya:AF .
+dpv-soya:NAM rdfs:subClassOf dpv-soya:AF .
+dpv-soya:NER rdfs:subClassOf dpv-soya:AF .
+dpv-soya:NGA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:REU rdfs:subClassOf dpv-soya:AF .
+dpv-soya:RWA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SYC rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SDN rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SSD rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SHN rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SLE rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SEN rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SOM rdfs:subClassOf dpv-soya:AF .
+dpv-soya:STP rdfs:subClassOf dpv-soya:AF .
+dpv-soya:SWZ rdfs:subClassOf dpv-soya:AF .
+dpv-soya:TCD rdfs:subClassOf dpv-soya:AF .
+dpv-soya:TGO rdfs:subClassOf dpv-soya:AF .
+dpv-soya:TUN rdfs:subClassOf dpv-soya:AF .
+dpv-soya:TZA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:UGA rdfs:subClassOf dpv-soya:AF .
+dpv-soya:MYT rdfs:subClassOf dpv-soya:AF .
+dpv-soya:ZAF rdfs:subClassOf dpv-soya:AF .
+dpv-soya:ZMB rdfs:subClassOf dpv-soya:AF .
+dpv-soya:ZWE rdfs:subClassOf dpv-soya:AF .
+
+dpv-soya:AS rdfs:subClassOf dpv:Region ; a owl:Class .
+dpv-soya:ARE  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:AFG  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:ARM  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:AUS  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:AZE  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:BGD  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:BHR  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:BRN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:BTN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:CCK  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:CHN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:GEO  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:HKG  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:IDN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:ISR  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:IND  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:IOT  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:IRQ  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:IRN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:JOR  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:JPN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:KGZ  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:KHM  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:PRK  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:KOR  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:KWT  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:KAZ  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:LAO  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:LBN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:LKA  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:MMR  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:MNG  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:MAC  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:MDV  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:MYS  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:NPL  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:OMN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:PHL  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:PAK  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:PSE  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:QAT  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:SAU  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:SGP  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:SYR  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:THA  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:TJK  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:TKM  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:TUR  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:TWN  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:UZB  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:VNM  rdfs:subClassOf dpv-soya:AS .
+dpv-soya:YEM  rdfs:subClassOf dpv-soya:AS .
+
+dpv-soya:EU  rdfs:subClassOf dpv:Region ; a owl:Class .
+dpv-soya:AND rdfs:subClassOf dpv-soya:EU .
+dpv-soya:ALB rdfs:subClassOf dpv-soya:EU .
+dpv-soya:AUT rdfs:subClassOf dpv-soya:EU .
+dpv-soya:ALA rdfs:subClassOf dpv-soya:EU .
+dpv-soya:BIH rdfs:subClassOf dpv-soya:EU .
+dpv-soya:BEL rdfs:subClassOf dpv-soya:EU .
+dpv-soya:BGR rdfs:subClassOf dpv-soya:EU .
+dpv-soya:BLR rdfs:subClassOf dpv-soya:EU .
+dpv-soya:CHE rdfs:subClassOf dpv-soya:EU .
+dpv-soya:CYP rdfs:subClassOf dpv-soya:EU .
+dpv-soya:CZE rdfs:subClassOf dpv-soya:EU .
+dpv-soya:DEU rdfs:subClassOf dpv-soya:EU .
+dpv-soya:DNK rdfs:subClassOf dpv-soya:EU .
+dpv-soya:EST rdfs:subClassOf dpv-soya:EU .
+dpv-soya:ESP rdfs:subClassOf dpv-soya:EU .
+dpv-soya:FIN rdfs:subClassOf dpv-soya:EU .
+dpv-soya:FRO rdfs:subClassOf dpv-soya:EU .
+dpv-soya:FRA rdfs:subClassOf dpv-soya:EU .
+dpv-soya:GBR rdfs:subClassOf dpv-soya:EU .
+dpv-soya:GGY rdfs:subClassOf dpv-soya:EU .
+dpv-soya:GIB rdfs:subClassOf dpv-soya:EU .
+dpv-soya:GRC rdfs:subClassOf dpv-soya:EU .
+dpv-soya:HRV rdfs:subClassOf dpv-soya:EU .
+dpv-soya:HUN rdfs:subClassOf dpv-soya:EU .
+dpv-soya:IRL rdfs:subClassOf dpv-soya:EU .
+dpv-soya:IMN rdfs:subClassOf dpv-soya:EU .
+dpv-soya:ISL rdfs:subClassOf dpv-soya:EU .
+dpv-soya:ITA rdfs:subClassOf dpv-soya:EU .
+dpv-soya:JEY rdfs:subClassOf dpv-soya:EU .
+dpv-soya:XKX rdfs:subClassOf dpv-soya:EU .
+dpv-soya:LIE rdfs:subClassOf dpv-soya:EU .
+dpv-soya:LTU rdfs:subClassOf dpv-soya:EU .
+dpv-soya:LUX rdfs:subClassOf dpv-soya:EU .
+dpv-soya:LVA rdfs:subClassOf dpv-soya:EU .
+dpv-soya:MCO rdfs:subClassOf dpv-soya:EU .
+dpv-soya:MDA rdfs:subClassOf dpv-soya:EU .
+dpv-soya:MNE rdfs:subClassOf dpv-soya:EU .
+dpv-soya:MKD rdfs:subClassOf dpv-soya:EU .
+dpv-soya:MLT rdfs:subClassOf dpv-soya:EU .
+dpv-soya:NLD rdfs:subClassOf dpv-soya:EU .
+dpv-soya:NOR rdfs:subClassOf dpv-soya:EU .
+dpv-soya:POL rdfs:subClassOf dpv-soya:EU .
+dpv-soya:PRT rdfs:subClassOf dpv-soya:EU .
+dpv-soya:ROU rdfs:subClassOf dpv-soya:EU .
+dpv-soya:SRB rdfs:subClassOf dpv-soya:EU .
+dpv-soya:RUS rdfs:subClassOf dpv-soya:EU .
+dpv-soya:SWE rdfs:subClassOf dpv-soya:EU .
+dpv-soya:SVN rdfs:subClassOf dpv-soya:EU .
+dpv-soya:SJM rdfs:subClassOf dpv-soya:EU .
+dpv-soya:SVK rdfs:subClassOf dpv-soya:EU .
+dpv-soya:SMR rdfs:subClassOf dpv-soya:EU .
+dpv-soya:UKR rdfs:subClassOf dpv-soya:EU .
+dpv-soya:VAT rdfs:subClassOf dpv-soya:EU .
+dpv-soya:SCG rdfs:subClassOf dpv-soya:EU .
+
+dpv-soya:OC  rdfs:subClassOf dpv:Region ; a owl:Class .
+dpv-soya:ASM rdfs:subClassOf dpv-soya:OC .
+dpv-soya:AUS rdfs:subClassOf dpv-soya:OC .
+dpv-soya:COK rdfs:subClassOf dpv-soya:OC .
+dpv-soya:CXR rdfs:subClassOf dpv-soya:OC .
+dpv-soya:FJI rdfs:subClassOf dpv-soya:OC .
+dpv-soya:FSM rdfs:subClassOf dpv-soya:OC .
+dpv-soya:GUM rdfs:subClassOf dpv-soya:OC .
+dpv-soya:KIR rdfs:subClassOf dpv-soya:OC .
+dpv-soya:MHL rdfs:subClassOf dpv-soya:OC .
+dpv-soya:MNP rdfs:subClassOf dpv-soya:OC .
+dpv-soya:NCL rdfs:subClassOf dpv-soya:OC .
+dpv-soya:NFK rdfs:subClassOf dpv-soya:OC .
+dpv-soya:NRU rdfs:subClassOf dpv-soya:OC .
+dpv-soya:NIU rdfs:subClassOf dpv-soya:OC .
+dpv-soya:NZL rdfs:subClassOf dpv-soya:OC .
+dpv-soya:PYF rdfs:subClassOf dpv-soya:OC .
+dpv-soya:PNG rdfs:subClassOf dpv-soya:OC .
+dpv-soya:PCN rdfs:subClassOf dpv-soya:OC .
+dpv-soya:PLW rdfs:subClassOf dpv-soya:OC .
+dpv-soya:SLB rdfs:subClassOf dpv-soya:OC .
+dpv-soya:TKL rdfs:subClassOf dpv-soya:OC .
+dpv-soya:TLS rdfs:subClassOf dpv-soya:OC .
+dpv-soya:TON rdfs:subClassOf dpv-soya:OC .
+dpv-soya:TUV rdfs:subClassOf dpv-soya:OC .
+dpv-soya:UMI rdfs:subClassOf dpv-soya:OC .
+dpv-soya:VUT rdfs:subClassOf dpv-soya:OC .
+dpv-soya:WLF rdfs:subClassOf dpv-soya:OC .
+dpv-soya:WSM rdfs:subClassOf dpv-soya:OC .
+
+dpv-soya:SA rdfs:subClassOf dpv:Region ; a owl:Class .
+dpv-soya:ARG rdfs:subClassOf dpv-soya:SA .
+dpv-soya:BOL rdfs:subClassOf dpv-soya:SA .
+dpv-soya:BRA rdfs:subClassOf dpv-soya:SA .
+dpv-soya:CHL rdfs:subClassOf dpv-soya:SA .
+dpv-soya:COL rdfs:subClassOf dpv-soya:SA .
+dpv-soya:ECU rdfs:subClassOf dpv-soya:SA .
+dpv-soya:FLK rdfs:subClassOf dpv-soya:SA .
+dpv-soya:GUF rdfs:subClassOf dpv-soya:SA .
+dpv-soya:GUY rdfs:subClassOf dpv-soya:SA .
+dpv-soya:PER rdfs:subClassOf dpv-soya:SA .
+dpv-soya:PRY rdfs:subClassOf dpv-soya:SA .
+dpv-soya:SUR rdfs:subClassOf dpv-soya:SA .
+dpv-soya:URY rdfs:subClassOf dpv-soya:SA .
+dpv-soya:VEN rdfs:subClassOf dpv-soya:SA .
+
+dpv-soya:NA  rdfs:subClassOf dpv:Region ; a owl:Class .
+dpv-soya:ATG rdfs:subClassOf dpv-soya:NA .
+dpv-soya:AIA rdfs:subClassOf dpv-soya:NA .
+dpv-soya:ABW rdfs:subClassOf dpv-soya:NA .
+dpv-soya:BRB rdfs:subClassOf dpv-soya:NA .
+dpv-soya:BLM rdfs:subClassOf dpv-soya:NA .
+dpv-soya:BMU rdfs:subClassOf dpv-soya:NA .
+dpv-soya:BES rdfs:subClassOf dpv-soya:NA .
+dpv-soya:BHS rdfs:subClassOf dpv-soya:NA .
+dpv-soya:BLZ rdfs:subClassOf dpv-soya:NA .
+dpv-soya:CAN rdfs:subClassOf dpv-soya:NA .
+dpv-soya:CRI rdfs:subClassOf dpv-soya:NA .
+dpv-soya:CUB rdfs:subClassOf dpv-soya:NA .
+dpv-soya:CUW rdfs:subClassOf dpv-soya:NA .
+dpv-soya:DMA rdfs:subClassOf dpv-soya:NA .
+dpv-soya:DOM rdfs:subClassOf dpv-soya:NA .
+dpv-soya:GRD rdfs:subClassOf dpv-soya:NA .
+dpv-soya:GRL rdfs:subClassOf dpv-soya:NA .
+dpv-soya:GLP rdfs:subClassOf dpv-soya:NA .
+dpv-soya:GTM rdfs:subClassOf dpv-soya:NA .
+dpv-soya:HND rdfs:subClassOf dpv-soya:NA .
+dpv-soya:HTI rdfs:subClassOf dpv-soya:NA .
+dpv-soya:JAM rdfs:subClassOf dpv-soya:NA .
+dpv-soya:KNA rdfs:subClassOf dpv-soya:NA .
+dpv-soya:CYM rdfs:subClassOf dpv-soya:NA .
+dpv-soya:LCA rdfs:subClassOf dpv-soya:NA .
+dpv-soya:MAF rdfs:subClassOf dpv-soya:NA .
+dpv-soya:MTQ rdfs:subClassOf dpv-soya:NA .
+dpv-soya:MSR rdfs:subClassOf dpv-soya:NA .
+dpv-soya:MEX rdfs:subClassOf dpv-soya:NA .
+dpv-soya:NIC rdfs:subClassOf dpv-soya:NA .
+dpv-soya:PAN rdfs:subClassOf dpv-soya:NA .
+dpv-soya:SPM rdfs:subClassOf dpv-soya:NA .
+dpv-soya:PRI rdfs:subClassOf dpv-soya:NA .
+dpv-soya:SLV rdfs:subClassOf dpv-soya:NA .
+dpv-soya:SXM rdfs:subClassOf dpv-soya:NA .
+dpv-soya:TCA rdfs:subClassOf dpv-soya:NA .
+dpv-soya:TTO rdfs:subClassOf dpv-soya:NA .
+dpv-soya:USA rdfs:subClassOf dpv-soya:NA .
+dpv-soya:VCT rdfs:subClassOf dpv-soya:NA .
+dpv-soya:VGB rdfs:subClassOf dpv-soya:NA .
+dpv-soya:VIR rdfs:subClassOf dpv-soya:NA .
+dpv-soya:ANT rdfs:subClassOf dpv-soya:NA .
+
+dpv-soya:AN  rdfs:subClassOf dpv:Region ; a owl:Class .
+dpv-soya:ATA rdfs:subClassOf dpv-soya:AN .
+dpv-soya:BVT rdfs:subClassOf dpv-soya:AN .
+dpv-soya:SGS rdfs:subClassOf dpv-soya:AN .
+dpv-soya:HMD rdfs:subClassOf dpv-soya:AN .
+dpv-soya:ATF rdfs:subClassOf dpv-soya:AN .
+
+dpv-soya:EuropeanUnion rdfs:subClassOf dpv:EconomicUnion ; a owl:Class .
+dpv-soya:AUT rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:BEL rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:BGR rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:CYP rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:CZE rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:DEU rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:DNK rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:EST rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:ESP rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:FIN rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:FRA rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:GRC rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:HRV rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:HUN rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:IRL rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:ITA rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:LTU rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:LUX rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:LVA rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:MLT rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:NLD rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:POL rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:PRT rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:ROU rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:SVN rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:SVK rdfs:subClassOf dpv-soya:EuropeanUnion .
+dpv-soya:SWE rdfs:subClassOf dpv-soya:EuropeanUnion .

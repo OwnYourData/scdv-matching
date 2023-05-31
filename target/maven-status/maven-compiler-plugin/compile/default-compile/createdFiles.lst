@@ -1,0 +1,7 @@
+id/semantics/soya/helper/SwissKnife.class
+id/semantics/soya/vocab/DPVO_SOYA.class
+id/semantics/soya/engine/ConsentHandle.class
+id/semantics/soya/Service.class
+id/semantics/soya/vocab/DPVO.class
+id/semantics/soya/helper/UnregisteredTermException.class
+id/semantics/soya/engine/UsagePolicyEngine.class

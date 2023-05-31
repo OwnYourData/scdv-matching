@@ -1,0 +1,197 @@
+@prefix dpvo: <https://w3id.org/dpv/dpv-owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix scdv: <https://w3id.org/scdv/v1#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdfs:type owl:Ontology ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
+rdfs:comment rdfs:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#label
+rdfs:label rdfs:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/dpv#DataCategory
+dpvo:DataCategory                rdfs:type owl:Class .
+
+
+###  http://www.w3.org/ns/dpv#Processing
+dpvo:Processing                  rdfs:type owl:Class .
+
+
+###  http://www.w3.org/ns/dpv#Purpose
+dpvo:Purpose                     rdfs:type owl:Class .
+
+
+###  http://www.w3.org/ns/dpv#StorageLocation
+dpvo:StorageLocation             rdfs:type owl:Class .
+
+
+###  http://www.w3.org/ns/dpv#Recipient
+dpvo:Recipient                   rdfs:type owl:Class .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#Agricultural
+scdv:Agricultural               rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:DataCategory ;
+                                rdfs:comment "Agricultural data refers to any information related to the cultivation, production, and distribution of crops, livestock, and other agricultural products."@en ;
+                                rdfs:label  "Agricultural Data"@en ,
+                                            "Landwirtschaftliche Daten"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#Identity
+scdv:Identity                   rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:DataCategory ;
+                                rdfs:comment "Identity data refers to any information that can be used to identify an individual, such as their name, address, or other personal details."@en ;
+                                rdfs:label  "Identity Data"@en ,
+                                            "Identitätsdaten"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#Analyse
+scdv:Analyse                   rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Processing ;
+                                rdfs:comment "allow analysing data to contribute to selected purposes"@en ;
+                                rdfs:label  "Analyse"@en ,
+                                            "Analysieren"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#Classify
+scdv:Classify                   rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Processing ;
+                                rdfs:comment "allow classifying data to contribute to selected purposes"@en ;
+                                rdfs:label  "Classify"@en ,
+                                            "Klassifizieren"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#Query
+scdv:Query                   rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Processing ;
+                                rdfs:comment "allow querying data to contribute to selected purposes"@en ;
+                                rdfs:label  "Query"@en ,
+                                            "Abfragen"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#Store
+scdv:Store                   rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Processing ;
+                                rdfs:comment "allow storing data to contribute to selected purposes"@en ;
+                                rdfs:label  "Store"@en ,
+                                            "Speichern"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#GreenClaim
+scdv:GreenClaim                 rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Purpose ;
+                                rdfs:comment "inform consumers on the environmental impacts of products"@en ;
+                                rdfs:label  "Green Claims"@en ,
+                                            "Umweltbezogene Behauptungen"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#DestinationOrigin
+scdv:DestinationOrigin          rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:GreenClaim ;
+                                rdfs:comment "verify designation of origin of products"@en ;
+                                rdfs:label  "Designation of Origin"@en ,
+                                            "Herkunftsbezeichnung"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#TransportModeDocumentation
+scdv:TransportModeDocumentation rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:GreenClaim ;
+                                rdfs:comment "document transport mode of products"@en ;
+                                rdfs:label   "Transport Mode Documentation"@en ,
+                                            "Dokumentation des Transportmodus"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#TransportModeLabeling
+scdv:TransportModeLabeling rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:GreenClaim ;
+                                rdfs:comment "label transport chain of products"@en ;
+                                rdfs:label   "Transport Chain Labeling"@en ,
+                                            "Kennzeichnung des Transportmodus"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#DateMarking
+scdv:DateMarking                rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Purpose ;
+                                rdfs:comment "date marking to avoid food waste"@en ;
+                                rdfs:label  "Date Marking"@en ,
+                                            "Produkt(verbrauchs)datierung"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#SupplyChainOptimization
+scdv:SupplyChainOptimization    rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Purpose ;
+                                rdfs:comment "optimize supply chain processes of products"@en ;
+                                rdfs:label  "Supply Chain Optimization"@en ,
+                                            "Lieferkettenoptimierung"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#SupplyChainFacilitation
+scdv:SupplyChainFacilitation    rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:SupplyChainOptimization ;
+                                rdfs:comment "allow ex ante supply chain management decisions"@en ;
+                                rdfs:label  "Supply Chain Facilitation"@en ,
+                                            "Lieferkettensteuerung"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#SupplyChainVisibility
+scdv:SupplyChainVisibility      rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:SupplyChainOptimization ;
+                                rdfs:comment "allow ex nunc supply chain management decisions"@en ;
+                                rdfs:label  "Supply Chain Visibility"@en ,
+                                            "Sichtbarmachen der Lieferkette"@de .
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#SupplyChainTraceability
+scdv:SupplyChainTraceability    rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:SupplyChainOptimization ;
+                                rdfs:comment "allow ex post supply chain management analysis"@en ;
+                                rdfs:label  "Supply Chain Traceability"@en ,
+                                            "Lieferketten Rückverfolgbarkeit"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#EU
+scdv:EU    rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:StorageLocation ;
+                                rdfs:comment "restrict storage locations to EU countries"@en ;
+                                rdfs:label  "EU"@en ,
+                                            "EU"@de .
+
+###  https://ns.ownyourdata.eu/scdv/v1#ThirdCountries
+scdv:ThirdCountries    rdfs:type owl:Class ;
+                                rdf:subClassOf scdv:StorageLocation ;
+                                rdfs:comment "allow storage locations in third countries"@en ;
+                                rdfs:label  "Third Countries"@en ,
+                                            "Drittländer"@de .   
+
+###  https://ns.ownyourdata.eu/scdv/v1#Authority
+scdv:Authority    rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Recipient ;
+                                rdfs:comment "restrict recipients to public authorities"@en ;
+                                rdfs:label  "Authority"@en ,
+                                            "Behörde"@de .   
+
+
+###  https://ns.ownyourdata.eu/scdv/v1#DataSpace
+scdv:DataSpace    rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Recipient ;
+                                rdfs:comment "restrict recipients to a governed EU data space"@en ;
+                                rdfs:label  "Data Space"@en ,
+                                            "Datenraum"@de .   
+
+###  https://ns.ownyourdata.eu/scdv/v1#Public
+scdv:Public    rdfs:type owl:Class ;
+                                rdf:subClassOf dpvo:Recipient ;
+                                rdfs:comment "no restriction on recipients"@en ;
+                                rdfs:label  "Public"@en ,
+                                            "Öffentlichkeit"@de . 
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,21 @@
+meta:
+  name: scmup
+
+content:
+  bases:
+    - name: up
+      attributes:
+        "dpvo:hasPurpose": any
+        "dpvo:hasProcessing": any
+        "dpvo:hasRecipient": any
+        "dpvo:hasLocation": any
+        "dpvo:hasExpiryTime": any
+  overlays:
+    - type: OverlayTransformation
+      name: TransformationOverlay
+      engine: handlebars
+      value:
+        "dpvo:hasPurpose": {{#each verifiableCredential}}{{#each this.credentialSubject.purposes}}[{{#each this.purpose}}\"{{this}}\"{{#unless @last}},{{/unless}}{{/each}}]{{/each}}{{/each}}
+        "dpvo:hasProcessing": {{#each verifiableCredential}}{{#each this.credentialSubject.purposes}}[{{#each this.processing}}\"{{this}}\"{{#unless @last}},{{/unless}}{{/each}}]{{/each}}{{/each}}
+        "dpvo:hasRecipient": {{#each verifiableCredential}}{{#each this.credentialSubject.purposes}}[{{#each this.recipient}}\"{{this}}\"{{#unless @last}},{{/unless}}{{/each}}]{{/each}}{{/each}}
+        "dpvo:hasLocation": {{#each verifiableCredential}}{{#each this.credentialSubject.purposes}}[{{#each this.storage_location}}\"{{this}}\"{{#unless @last}},{{/unless}}{{/each}}]{{/each}}{{/each}}

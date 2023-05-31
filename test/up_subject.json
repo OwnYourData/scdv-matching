@@ -1,0 +1,20 @@
+{
+  "purpose": [
+    "scdv:green_claim",
+    "scdv:date_marking",
+    "scdv:supply_chain_optimization"
+  ],
+  "processing": [
+    "scdv:analyse",
+    "scdv:query",
+    "scdv:store"
+  ],
+  "recipient": [
+    "scdv:authority",
+    "scdv:data_space"
+  ],
+  "storage_location": [
+    "scdv:EU"
+  ],
+  "retention_period": "P0Y6M0DT0H0M0S"
+}

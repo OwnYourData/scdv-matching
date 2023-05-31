@@ -1,0 +1,880 @@
+@prefix sw: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dpv: <https://w3id.org/dpv/dpv-owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################################################
+#    Classes
+#################################################################
+
+
+###  http://www.w3.org/ns/dpv#Accent
+dpv:Accent rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Language .
+
+
+###  http://www.w3.org/ns/dpv#AccountIdentifier
+dpv:AccountIdentifier rdf:type owl:Class ;
+                      rdfs:subClassOf dpv:FinancialAccount .
+
+
+###  http://www.w3.org/ns/dpv#Acquantaince
+dpv:Acquantaince rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:SocialNetwork .
+
+
+###  http://www.w3.org/ns/dpv#Age
+dpv:Age rdf:type owl:Class ;
+        rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#ApartmentOwned
+dpv:ApartmentOwned rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:HouseOwned .
+
+
+###  http://www.w3.org/ns/dpv#Association
+dpv:Association rdf:type owl:Class ;
+                rdfs:subClassOf dpv:SocialNetwork .
+
+
+###  http://www.w3.org/ns/dpv#Attitude
+dpv:Attitude rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#Authenticating
+dpv:Authenticating rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:Internal .
+
+
+###  http://www.w3.org/ns/dpv#AuthenticationHistory
+dpv:AuthenticationHistory rdf:type owl:Class ;
+                          rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#BankAccount
+dpv:BankAccount rdf:type owl:Class ;
+                rdfs:subClassOf dpv:FinancialAccount .
+
+
+###  http://www.w3.org/ns/dpv#Behavioral
+dpv:Behavioral rdf:type owl:Class ;
+               rdfs:subClassOf dpv:External .
+
+
+###  http://www.w3.org/ns/dpv#Biometric
+dpv:Biometric rdf:type owl:Class ;
+              rdfs:subClassOf dpv:Identifying ,
+                              dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#BloodType
+dpv:BloodType rdf:type owl:Class ;
+              rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#BrowserFingerprint
+dpv:BrowserFingerprint rdf:type owl:Class ;
+                       rdfs:subClassOf dpv:DeviceBased .
+
+
+###  http://www.w3.org/ns/dpv#BrowsingBehavior
+dpv:BrowsingBehavior rdf:type owl:Class ;
+                     rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#BrowsingReferral
+dpv:BrowsingReferral rdf:type owl:Class ;
+                     rdfs:subClassOf dpv:BrowsingBehavior .
+
+
+###  http://www.w3.org/ns/dpv#CallLog
+dpv:CallLog rdf:type owl:Class ;
+            rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#CarOwned
+dpv:CarOwned rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Ownership .
+
+
+###  http://www.w3.org/ns/dpv#Character
+dpv:Character rdf:type owl:Class ;
+              rdfs:subClassOf dpv:PublicLife .
+
+
+###  http://www.w3.org/ns/dpv#Communication
+dpv:Communication rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Social .
+
+
+###  http://www.w3.org/ns/dpv#CommunicationsMetadata
+dpv:CommunicationsMetadata rdf:type owl:Class ;
+                           rdfs:subClassOf dpv:PublicLife .
+
+
+###  http://www.w3.org/ns/dpv#Connection
+dpv:Connection rdf:type owl:Class ;
+               rdfs:subClassOf dpv:SocialNetwork .
+
+
+###  http://www.w3.org/ns/dpv#Contact
+dpv:Contact rdf:type owl:Class ;
+            rdfs:subClassOf dpv:Tracking .
+
+
+###  http://www.w3.org/ns/dpv#Country
+dpv:TrackingCountry rdf:type owl:Class ;
+            rdfs:subClassOf dpv:TrackingLocation .
+
+
+###  http://www.w3.org/ns/dpv#Credit
+dpv:Credit rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#CreditCapacity
+dpv:CreditCapacity rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:Credit .
+
+
+###  http://www.w3.org/ns/dpv#CreditCardNumber
+dpv:CreditCardNumber rdf:type owl:Class ;
+                     rdfs:subClassOf dpv:PaymentCardNumber .
+
+
+###  http://www.w3.org/ns/dpv#CreditRecord
+dpv:CreditRecord rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Credit .
+
+
+###  http://www.w3.org/ns/dpv#CreditScore
+dpv:CreditScore rdf:type owl:Class ;
+                rdfs:subClassOf dpv:CreditWorthiness .
+
+
+###  http://www.w3.org/ns/dpv#CreditStanding
+dpv:CreditStanding rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:Credit .
+
+
+###  http://www.w3.org/ns/dpv#CreditWorthiness
+dpv:CreditWorthiness rdf:type owl:Class ;
+                     rdfs:subClassOf dpv:Credit .
+
+
+###  http://www.w3.org/ns/dpv#Criminal
+dpv:Criminal rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Social .
+
+
+###  http://www.w3.org/ns/dpv#CriminalCharge
+dpv:CriminalCharge rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:Criminal .
+
+
+###  http://www.w3.org/ns/dpv#CriminalConviction
+dpv:CriminalConviction rdf:type owl:Class ;
+                       rdfs:subClassOf dpv:Criminal .
+
+
+###  http://www.w3.org/ns/dpv#CriminalPardon
+dpv:CriminalPardon rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:Criminal .
+
+
+###  http://www.w3.org/ns/dpv#DNACode
+dpv:DNACode rdf:type owl:Class ;
+            rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#Demeanor
+dpv:Demeanor rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#Demographic
+dpv:Demographic rdf:type owl:Class ;
+                rdfs:subClassOf dpv:External .
+
+
+###  http://www.w3.org/ns/dpv#DerivedPersonalData
+dpv:DerivedPersonalData rdf:type owl:Class ;
+                        rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#DeviceApplications
+dpv:DeviceApplications rdf:type owl:Class ;
+                       rdfs:subClassOf dpv:DeviceSoftware .
+
+
+###  http://www.w3.org/ns/dpv#DeviceBased
+dpv:DeviceBased rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Tracking .
+
+
+###  http://www.w3.org/ns/dpv#DeviceOperatingSystem
+dpv:DeviceOperatingSystem rdf:type owl:Class ;
+                          rdfs:subClassOf dpv:DeviceSoftware .
+
+
+###  http://www.w3.org/ns/dpv#DeviceSoftware
+dpv:DeviceSoftware rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:DeviceBased .
+
+
+###  http://www.w3.org/ns/dpv#Dialect
+dpv:Dialect rdf:type owl:Class ;
+            rdfs:subClassOf dpv:Language .
+
+
+###  http://www.w3.org/ns/dpv#Disability
+dpv:Disability rdf:type owl:Class ;
+               rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#DisciplinaryAction
+dpv:DisciplinaryAction rdf:type owl:Class ;
+                       rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#Dislike
+dpv:Dislike rdf:type owl:Class ;
+            rdfs:subClassOf dpv:Interest .
+
+
+###  http://www.w3.org/ns/dpv#Divorce
+dpv:Divorce rdf:type owl:Class ;
+            rdfs:subClassOf dpv:FamilyStructure .
+
+
+###  http://www.w3.org/ns/dpv#DrugTestResult
+dpv:DrugTestResult rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#EmailAddress
+dpv:EmailAddress rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Contact .
+
+
+###  http://www.w3.org/ns/dpv#EmailContent
+dpv:EmailContent rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Communication .
+
+
+###  http://www.w3.org/ns/dpv#EmploymentHistory
+dpv:EmploymentHistory rdf:type owl:Class ;
+                      rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#EthnicOrigin
+dpv:EthnicOrigin rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Ethnicity ,
+                                 dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#Ethnicity
+dpv:Ethnicity rdf:type owl:Class ;
+              rdfs:subClassOf dpv:External .
+
+
+###  http://www.w3.org/ns/dpv#External
+dpv:External rdf:type owl:Class ;
+             rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#Family
+dpv:Family rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Social .
+
+
+###  http://www.w3.org/ns/dpv#FamilyHealthHistory
+dpv:FamilyHealthHistory rdf:type owl:Class ;
+                        rdfs:subClassOf dpv:HealthHistory .
+
+
+###  http://www.w3.org/ns/dpv#FamilyStructure
+dpv:FamilyStructure rdf:type owl:Class ;
+                    rdfs:subClassOf dpv:Family .
+
+
+###  http://www.w3.org/ns/dpv#Favorite
+dpv:Favorite rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Preference .
+
+
+###  http://www.w3.org/ns/dpv#FavoriteColor
+dpv:FavoriteColor rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Favorite .
+
+
+###  http://www.w3.org/ns/dpv#FavoriteFood
+dpv:FavoriteFood rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Favorite .
+
+
+###  http://www.w3.org/ns/dpv#FavoriteMusic
+dpv:FavoriteMusic rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Favorite .
+
+
+###  http://www.w3.org/ns/dpv#Fetish
+dpv:Fetish rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Sexual .
+
+
+###  http://www.w3.org/ns/dpv#Financial
+dpv:Financial rdf:type owl:Class ;
+              rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#FinancialAccount
+dpv:FinancialAccount rdf:type owl:Class ;
+                     rdfs:subClassOf dpv:Financial .
+
+
+###  http://www.w3.org/ns/dpv#FinancialAccountNumber
+dpv:FinancialAccountNumber rdf:type owl:Class ;
+                           rdfs:subClassOf dpv:AccountIdentifier .
+
+
+###  http://www.w3.org/ns/dpv#Fingerprint
+dpv:Fingerprint rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Biometric .
+
+
+###  http://www.w3.org/ns/dpv#Friend
+dpv:Friend rdf:type owl:Class ;
+           rdfs:subClassOf dpv:SocialNetwork .
+
+
+###  http://www.w3.org/ns/dpv#GPSCoordinate
+dpv:GPSCoordinate rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:TrackingLocation .
+
+
+###  http://www.w3.org/ns/dpv#Gender
+dpv:Gender rdf:type owl:Class ;
+           rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#GeneralReputation
+dpv:GeneralReputation rdf:type owl:Class ;
+                      rdfs:subClassOf dpv:PublicLife .
+
+
+###  http://www.w3.org/ns/dpv#Geographic
+dpv:Geographic rdf:type owl:Class ;
+               rdfs:subClassOf dpv:Demographic .
+
+
+###  http://www.w3.org/ns/dpv#GroupMembership
+dpv:GroupMembership rdf:type owl:Class ;
+                    rdfs:subClassOf dpv:SocialNetwork .
+
+
+###  http://www.w3.org/ns/dpv#HairColor
+dpv:HairColor rdf:type owl:Class ;
+              rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#Health
+dpv:Health rdf:type owl:Class ;
+           rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#HealthHistory
+dpv:HealthHistory rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#HealthRecord
+dpv:HealthRecord rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#Height
+dpv:Height rdf:type owl:Class ;
+           rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#Historical
+dpv:Historical rdf:type owl:Class ;
+               rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#HouseOwned
+dpv:HouseOwned rdf:type owl:Class ;
+               rdfs:subClassOf dpv:Ownership .
+
+
+###  http://www.w3.org/ns/dpv#IPAddress
+dpv:IPAddress rdf:type owl:Class ;
+              rdfs:subClassOf dpv:DeviceBased .
+
+
+###  http://www.w3.org/ns/dpv#Identifying
+dpv:Identifying rdf:type owl:Class ;
+                rdfs:subClassOf dpv:External .
+
+
+###  http://www.w3.org/ns/dpv#Income
+dpv:Income rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#IncomeBracket
+dpv:IncomeBracket rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Demographic .
+
+
+###  http://www.w3.org/ns/dpv#IndividualHealthHistory
+dpv:IndividualHealthHistory rdf:type owl:Class ;
+                            rdfs:subClassOf dpv:HealthHistory .
+
+
+###  http://www.w3.org/ns/dpv#Intention
+dpv:Intention rdf:type owl:Class ;
+              rdfs:subClassOf dpv:Preference .
+
+
+###  http://www.w3.org/ns/dpv#Interaction
+dpv:Interaction rdf:type owl:Class ;
+                rdfs:subClassOf dpv:PublicLife .
+
+
+###  http://www.w3.org/ns/dpv#Interest
+dpv:Interest rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Preference .
+
+
+###  http://www.w3.org/ns/dpv#Internal
+dpv:Internal rdf:type owl:Class ;
+             rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#Job
+dpv:Job rdf:type owl:Class ;
+        rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#KnowledgeBelief
+dpv:KnowledgeBelief rdf:type owl:Class ;
+                    rdfs:subClassOf dpv:Internal .
+
+
+###  http://www.w3.org/ns/dpv#Language
+dpv:Language rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Ethnicity .
+
+
+###  http://www.w3.org/ns/dpv#LifeHistory
+dpv:LifeHistory rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Historical .
+
+
+###  http://www.w3.org/ns/dpv#Like
+dpv:Like rdf:type owl:Class ;
+         rdfs:subClassOf dpv:Interest .
+
+
+###  http://www.w3.org/ns/dpv#LinkClicked
+dpv:LinkClicked rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#LoanRecord
+dpv:LoanRecord rdf:type owl:Class ;
+               rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#Location
+dpv:TrackingLocation rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Tracking .
+
+
+###  http://www.w3.org/ns/dpv#MACAddress
+dpv:MACAddress rdf:type owl:Class ;
+               rdfs:subClassOf dpv:DeviceBased .
+
+
+###  http://www.w3.org/ns/dpv#MaritalStatus
+dpv:MaritalStatus rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:PublicLife .
+
+
+###  http://www.w3.org/ns/dpv#Marriage
+dpv:Marriage rdf:type owl:Class ;
+             rdfs:subClassOf dpv:FamilyStructure .
+
+
+###  http://www.w3.org/ns/dpv#MedicalHealth
+dpv:MedicalHealth rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:External ,
+                                  dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#MentalHealth
+dpv:MentalHealth rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Health .
+
+
+###  http://www.w3.org/ns/dpv#Name
+dpv:Name rdf:type owl:Class ;
+         rdfs:subClassOf dpv:Identifying .
+
+
+###  http://www.w3.org/ns/dpv#OfficialID
+dpv:OfficialID rdf:type owl:Class ;
+               rdfs:subClassOf dpv:Identifying .
+
+
+###  http://www.w3.org/ns/dpv#Offspring
+dpv:Offspring rdf:type owl:Class ;
+              rdfs:subClassOf dpv:FamilyStructure .
+
+
+###  http://www.w3.org/ns/dpv#Opinion
+dpv:Opinion rdf:type owl:Class ;
+            rdfs:subClassOf dpv:Preference .
+
+
+###  http://www.w3.org/ns/dpv#Ownership
+dpv:Ownership rdf:type owl:Class ;
+              rdfs:subClassOf dpv:Financial .
+
+
+###  http://www.w3.org/ns/dpv#PINCode
+dpv:PINCode rdf:type owl:Class ;
+            rdfs:subClassOf dpv:Authenticating .
+
+
+###  http://www.w3.org/ns/dpv#Parent
+dpv:Parent rdf:type owl:Class ;
+           rdfs:subClassOf dpv:FamilyStructure .
+
+
+###  http://www.w3.org/ns/dpv#Password
+dpv:Password rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Authenticating .
+
+
+###  http://www.w3.org/ns/dpv#PaymentCard
+dpv:PaymentCard rdf:type owl:Class ;
+                rdfs:subClassOf dpv:FinancialAccount .
+
+
+###  http://www.w3.org/ns/dpv#PaymentCardExpiry
+dpv:PaymentCardExpiry rdf:type owl:Class ;
+                      rdfs:subClassOf dpv:PaymentCard .
+
+
+###  http://www.w3.org/ns/dpv#PaymentCardNumber
+dpv:PaymentCardNumber rdf:type owl:Class ;
+                      rdfs:subClassOf dpv:AccountIdentifier ,
+                                      dpv:PaymentCard .
+
+
+###  http://www.w3.org/ns/dpv#PersonalData
+dpv:PersonalData rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dpv#PersonalPossession
+dpv:PersonalPossession rdf:type owl:Class ;
+                       rdfs:subClassOf dpv:Ownership .
+
+
+###  http://www.w3.org/ns/dpv#Personality
+dpv:Personality rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#PhilosophicalBelief
+dpv:PhilosophicalBelief rdf:type owl:Class ;
+                        rdfs:subClassOf dpv:KnowledgeBelief ,
+                                        dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#PhysicalAddress
+dpv:PhysicalAddress rdf:type owl:Class ;
+                    rdfs:subClassOf dpv:Contact .
+
+
+###  http://www.w3.org/ns/dpv#PhysicalCharacteristic
+dpv:PhysicalCharacteristic rdf:type owl:Class ;
+                           rdfs:subClassOf dpv:External .
+
+
+###  http://www.w3.org/ns/dpv#PhysicalHealth
+dpv:PhysicalHealth rdf:type owl:Class ;
+                   rdfs:subClassOf dpv:Health .
+
+
+###  http://www.w3.org/ns/dpv#PhysicalTrait
+dpv:PhysicalTrait rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Demographic .
+
+
+###  http://www.w3.org/ns/dpv#Picture
+dpv:Picture rdf:type owl:Class ;
+            rdfs:subClassOf dpv:Identifying .
+
+
+###  http://www.w3.org/ns/dpv#Piercing
+dpv:Piercing rdf:type owl:Class ;
+             rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#PoliticalAffiliation
+dpv:PoliticalAffiliation rdf:type owl:Class ;
+                         rdfs:subClassOf dpv:PublicLife ,
+                                         dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#Preference
+dpv:Preference rdf:type owl:Class ;
+               rdfs:subClassOf dpv:Internal .
+
+
+###  http://www.w3.org/ns/dpv#Prescription
+dpv:Prescription rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:MedicalHealth .
+
+
+###  http://www.w3.org/ns/dpv#PrivacyPreference
+dpv:PrivacyPreference rdf:type owl:Class ;
+                      rdfs:subClassOf dpv:Preference .
+
+
+###  http://www.w3.org/ns/dpv#Proclivitie
+dpv:Proclivitie rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Sexual .
+
+
+###  http://www.w3.org/ns/dpv#Professional
+dpv:Professional rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Social .
+
+
+###  http://www.w3.org/ns/dpv#ProfessionalCertification
+dpv:ProfessionalCertification rdf:type owl:Class ;
+                              rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#ProfessionalEvaluation
+dpv:ProfessionalEvaluation rdf:type owl:Class ;
+                           rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#ProfessionalInterview
+dpv:ProfessionalInterview rdf:type owl:Class ;
+                          rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#PublicLife
+dpv:PublicLife rdf:type owl:Class ;
+               rdfs:subClassOf dpv:Social .
+
+
+###  http://www.w3.org/ns/dpv#Purchase
+dpv:Purchase rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#PurchasesAndSpendingHabit
+dpv:PurchasesAndSpendingHabit rdf:type owl:Class ;
+                              rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#Race
+dpv:Race rdf:type owl:Class ;
+         rdfs:subClassOf dpv:Ethnicity ,
+                         dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#Reference
+dpv:Reference rdf:type owl:Class ;
+              rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#Relationship
+dpv:Relationship rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:Family .
+
+
+###  http://www.w3.org/ns/dpv#Religion
+dpv:Religion rdf:type owl:Class ;
+             rdfs:subClassOf dpv:PublicLife ,
+                             dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#ReligiousBelief
+dpv:ReligiousBelief rdf:type owl:Class ;
+                    rdfs:subClassOf dpv:KnowledgeBelief ,
+                                    dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#Retina
+dpv:Retina rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Biometric .
+
+
+###  http://www.w3.org/ns/dpv#RoomNumber
+dpv:RoomNumber rdf:type owl:Class ;
+               rdfs:subClassOf dpv:TrackingLocation .
+
+
+###  http://www.w3.org/ns/dpv#Salary
+dpv:Salary rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#Sale
+dpv:Sale rdf:type owl:Class ;
+         rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#School
+dpv:School rdf:type owl:Class ;
+           rdfs:subClassOf dpv:Professional .
+
+
+###  http://www.w3.org/ns/dpv#SecretText
+dpv:SecretText rdf:type owl:Class ;
+               rdfs:subClassOf dpv:Authenticating .
+
+
+###  http://www.w3.org/ns/dpv#ServiceConsumptionBehavior
+dpv:ServiceConsumptionBehavior rdf:type owl:Class ;
+                               rdfs:subClassOf dpv:Behavioral .
+
+
+###  http://www.w3.org/ns/dpv#Sexual
+dpv:Sexual rdf:type owl:Class ;
+           rdfs:subClassOf dpv:External ,
+                           dpv:SpecialCategoryPersonalData .
+
+
+###  http://www.w3.org/ns/dpv#SexualHistory
+dpv:SexualHistory rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Sexual .
+
+
+###  http://www.w3.org/ns/dpv#SexualPreference
+dpv:SexualPreference rdf:type owl:Class ;
+                     rdfs:subClassOf dpv:Sexual .
+
+
+###  http://www.w3.org/ns/dpv#Sibling
+dpv:Sibling rdf:type owl:Class ;
+            rdfs:subClassOf dpv:FamilyStructure .
+
+
+###  http://www.w3.org/ns/dpv#SkinTone
+dpv:SkinTone rdf:type owl:Class ;
+             rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#Social
+dpv:Social rdf:type owl:Class ;
+           rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#SocialMediaCommunication
+dpv:SocialMediaCommunication rdf:type owl:Class ;
+                             rdfs:subClassOf dpv:Communication .
+
+
+###  http://www.w3.org/ns/dpv#SocialNetwork
+dpv:SocialNetwork rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Social .
+
+
+###  http://www.w3.org/ns/dpv#SocialStatus
+dpv:SocialStatus rdf:type owl:Class ;
+                 rdfs:subClassOf dpv:PublicLife .
+
+
+###  http://www.w3.org/ns/dpv#SpecialCategoryPersonalData
+dpv:SpecialCategoryPersonalData rdf:type owl:Class ;
+                                rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#TVViewingBehavior
+dpv:TVViewingBehavior rdf:type owl:Class ;
+                      rdfs:subClassOf dpv:ServiceConsumptionBehavior .
+
+
+###  http://www.w3.org/ns/dpv#Tattoo
+dpv:Tattoo rdf:type owl:Class ;
+           rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#Tax
+dpv:Tax rdf:type owl:Class ;
+        rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#TelephoneNumber
+dpv:TelephoneNumber rdf:type owl:Class ;
+                    rdfs:subClassOf dpv:Contact .
+
+
+###  http://www.w3.org/ns/dpv#Thought
+dpv:Thought rdf:type owl:Class ;
+            rdfs:subClassOf dpv:KnowledgeBelief .
+
+
+###  http://www.w3.org/ns/dpv#Tracking
+dpv:Tracking rdf:type owl:Class ;
+             rdfs:subClassOf dpv:PersonalData .
+
+
+###  http://www.w3.org/ns/dpv#Transaction
+dpv:Transaction rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Transactional .
+
+
+###  http://www.w3.org/ns/dpv#Transactional
+dpv:Transactional rdf:type owl:Class ;
+                  rdfs:subClassOf dpv:Financial .
+
+
+###  http://www.w3.org/ns/dpv#UID
+dpv:UID rdf:type owl:Class ;
+        rdfs:subClassOf dpv:Identifying .
+
+
+###  http://www.w3.org/ns/dpv#Username
+dpv:Username rdf:type owl:Class ;
+             rdfs:subClassOf dpv:Identifying .
+
+
+###  http://www.w3.org/ns/dpv#VoiceCommunicationRecording
+dpv:VoiceCommunicationRecording rdf:type owl:Class ;
+                                rdfs:subClassOf dpv:Communication .
+
+
+###  http://www.w3.org/ns/dpv#VoiceMail
+dpv:VoiceMail rdf:type owl:Class ;
+              rdfs:subClassOf dpv:Communication .
+
+
+###  http://www.w3.org/ns/dpv#Weight
+dpv:Weight rdf:type owl:Class ;
+           rdfs:subClassOf dpv:PhysicalCharacteristic .
+
+
+###  http://www.w3.org/ns/dpv#WorkHistory
+dpv:WorkHistory rdf:type owl:Class ;
+                rdfs:subClassOf dpv:Professional .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

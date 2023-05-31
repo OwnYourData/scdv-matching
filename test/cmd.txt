@@ -1,0 +1,19 @@
+mvn clean install -Dskiptests
+
+# local
+directory: /Users/christoph/projects/Babelfish/impl/scdv-matching 
+java -jar target/scdv-matching-0.1.0-SNAPSHOT-jar-with-dependencies.jar
+
+# Docker
+
+* valid:
+cat src/test/resources/dpv/tester-scm-valid.json | curl -s -o /dev/null -w "%{http_code}" -H "Content-Type: application/json" -d @- -X POST http://localhost:2806/api/validate/usagepolicy
+
+* equal:
+cat src/test/resources/dpv/tester-scm-equal.json | curl -s -o /dev/null -w "%{http_code}" -H "Content-Type: application/json" -d @- -X POST http://localhost:2806/api/validate/usagepolicy
+
+* invalid:
+
+cat src/test/resources/dpv/tester-scm-invalid.json | curl -s -H "Content-Type: application/json" -d @- -X POST http://localhost:2806/api/validate/usagepolicy
+
+

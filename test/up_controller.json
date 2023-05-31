@@ -1,0 +1,16 @@
+{
+  "dpv:hasProcessing": [
+    "scdv:green_claim"
+  ],
+  "dpv:hasProcessing": [
+    "scdv:store"
+  ],
+  "dpv:hasRecipient": [
+    "scdv:authority",
+    "scdv:data_space"
+  ],
+  "dpv:hasLocation": [
+    "scdv:EU"
+  ],
+  "retention_period": "P0Y6M0DT0H0M0S"
+}
